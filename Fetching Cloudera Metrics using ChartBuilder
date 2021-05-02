@@ -1,0 +1,7 @@
+# Using Cloudera ChartBuilder one can fetch cluster configuration/metrics details such as total physical memory of nodes, java heap size of services running of nodes etc. 
+
+
+Path: 
+
+Query:
+select physical_memory_total/1000000000,jvm_max_memory_mb,hive_memory_heap_max/1000000000 where clusterid=1
